@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine-html.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/boot.min.js"></script>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+	describe('calculator', function () {
+		
+		it('1 + 1 should equal 3', function () {
+			expect(calculator.sum(1, 1)).toBe(2);
+		});
+		
+		it('2-1 should be equal 1', function(){
+			expect(calculator.subtract(2,1)).toBe(1);
+		});
+
+	});
+	
+	var calculator = {
+		sum : function(x, y){
+			return x + y;			
+		},
+	  
+	   subtract : function(x, y){
+		    return x - y;
+	}
+		
+		
+	}
+			
+	</script>
+</html>

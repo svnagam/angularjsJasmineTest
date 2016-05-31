@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>State Provider</title>
+
+<!-- CSS (load bootstrap) -->
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<style>
+.navbar {
+	border-radius: 0;
+}
+</style>
+<link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css"
+	type="text/css">
+
+<style>
+.grid {
+	width: 500px;
+	height: 250px;
+}
+</style>
+
+</head>
+
+<body ng-app="routerApp">
+
+	<!--  Navigation -->
+	<nav class="navbar navbar-inverse" role="navigation">
+
+		<div class="navbar-header">
+			<a class="navbar-brand" ui-sref='#'> Angular UI Router</a>
+
+		</div>
+
+		<ul class="nav navbar-nav">
+			<li><a ui-sref="home">Home</a></li>
+			<li><a ui-sref="about">About</a></li>
+		</ul>
+
+	</nav>
+
+	<div class="container">
+		<div ui-view></div>
+	</div>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+		<script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+<script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+<script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+<script src="http://ui-grid.info/release/ui-grid.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+
+	<script src="app/js/app.js"></script>
+	<script src="app/js/controller.js"></script>
+
+</body>
